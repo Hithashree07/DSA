@@ -7,7 +7,8 @@ class Solution {
         if(s.charAt(i)!=s.charAt(j)){
             return false;
         }
-        i++;j--;
+        i++;
+        j--;
       }
       return true;
 }
