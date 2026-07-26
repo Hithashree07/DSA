@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void staircase(int n) {
+        for (int i = 1; i <= n; i++) {
+            // Print (n - i) spaces
+            for (int j = 0; j < n - i; j++) {
+                System.out.print(" ");
+            }
+            // Print (i) hashes
+            for (int k = 0; k < i; k++) {
+                System.out.print("#");
+            }
+            // Move to the next line
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(scanner);
+        if (scanner.hasNextInt()) {
+            int n = scanner.nextInt();
+            staircase(n);
+        }
+        scanner.close();
+    }
+}
